@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('Logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    background-color: #c4ccf6;
+    color: rgb(15, 61, 70);
+    border: 2px dashed black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.draggableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    background-image: var(--img);
+    background-size: contain; /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    margin: 10px;
+    cursor: grab; /* Change cursor to indicate draggable */
+    transition: transform 0.2s;
+}
+
+.box:active {
+    cursor: grabbing; /* Change cursor when dragging */
+}
+
+
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+}
+
+.droppable {
+    width: 100px;
+    height: 100px;
+    background-color: #A9A9A9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+}
+
+.board {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#remarks, #scores {
+    font-weight: bold;
+}
+
+.reset{
+  width:160px;
+  height:60px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
+}

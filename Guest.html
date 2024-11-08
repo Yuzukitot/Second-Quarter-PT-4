@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <link rel="stylesheet" href="Logo.css">
+    <script src="Gl.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guests The Logo!</h1>
+    </header>
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1" style="--img:url(images/amazon.png);"></div>
+        <div class="box" draggable="true" id="box2" style="--img:url(images/Cocacola.png);"></div>
+        <div class="box" draggable="true" id="box3" style="--img:url(images/iphone.png);"></div>
+        <div class="box" draggable="true" id="box4" style="--img:url(images/nike.png);"></div>
+        <div class="box" draggable="true" id="box5" style="--img:url(images/Shell-Logo.png);"></div>
+       <div class="box" draggable="true" id="box6" style="--img:url(images/Snapchat.png);"></div>
+      <div class="box" draggable="true" id="box7" style="--img:url(images/XorTwitter.png);"></div>
+        <div class="box" draggable="true" id="box8" style="--img:url(images/Steam.png);"></div>
+        <div class="box" draggable="true" id="box9" style="--img:url(images/Chrome.png);"></div>
+        <div class="box" draggable="true" id="box10" style="--img:url(images/Pepsi.jpg);"></div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box10">Pepsi</div><br><br>
+        <div class="droppable" data-draggable-id="box1">Amazon</div><br>
+        <div class="droppable" data-draggable-id="box9">Chrome</div>
+        <div class="droppable" data-draggable-id="box2">Coca Cola</div>
+        <div class="droppable" data-draggable-id="box3">Iphone</div>
+        <div class="droppable" data-draggable-id="box8">Steam</div>
+        <div class="droppable" data-draggable-id="box4">Nike</div>
+        <div class="droppable" data-draggable-id="box7">X Or Twitter</div>
+        <div class="droppable" data-draggable-id="box6">Snapchat</div>
+        <div class="droppable" data-draggable-id="box5">Shell</div>
+
+        <div class="board">Remarks:<p id="remarks"></p>
+        Total of Your Correct Answer:<p id="scores"></p>
+        </div>
+    </div><br>
+   <br> <button class="reset" onclick="reset (event)">Try again</button>
+</body>
+</html>
